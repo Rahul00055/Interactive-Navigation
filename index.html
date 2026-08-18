@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NexaNav - SkillCraft Web Development Internship Project">
+  <title>NexaNav | Interactive Navigation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="NexaNav home">
+        <span class="brand-mark">N</span><span>Nexa<span>Nav</span></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="features.html">Features</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><span>☼</span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="pulse-dot"></span> SKILLCRAFT WEB DEVELOPMENT</p>
+        <h1>Navigation that <span>responds</span> to you.</h1>
+        <p class="hero-text">A polished, responsive navigation experience with scroll-aware styling, animated hover states, active-page detection and a mobile-first interface.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="features.html">Explore Features <span>→</span></a>
+          <a class="btn btn-ghost" href="#showcase">See Interaction</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal delay-1">
+        <div class="orb orb-a"></div><div class="orb orb-b"></div>
+        <div class="glass-card">
+          <div class="mini-top"><span>INTERACTIVE UI</span><span class="status">● LIVE</span></div>
+          <div class="nav-preview">
+            <span class="preview-logo">N</span>
+            <span class="preview-item active">Home</span>
+            <span class="preview-item">About</span>
+            <span class="preview-item">Features</span>
+          </div>
+          <div class="preview-content">
+            <div class="preview-line large"></div>
+            <div class="preview-line"></div>
+            <div class="preview-line short"></div>
+            <div class="preview-buttons"><i></i><i></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats section-shell reveal">
+      <div><strong>01</strong><span>Fixed Navigation</span></div>
+      <div><strong>02</strong><span>Scroll Detection</span></div>
+      <div><strong>03</strong><span>Hover Animation</span></div>
+      <div><strong>04</strong><span>Responsive Design</span></div>
+    </section>
+
+    <section class="showcase section-shell" id="showcase">
+      <div class="section-heading reveal">
+        <p class="eyebrow">THE EXPERIENCE</p>
+        <h2>Small interactions. <span>Big difference.</span></h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <div class="feature-number">01</div><div class="icon">↕</div>
+          <h3>Scroll-aware style</h3>
+          <p>The navigation smoothly changes from transparent glass to a compact solid surface as the visitor scrolls.</p>
+        </article>
+        <article class="feature-card reveal delay-1">
+          <div class="feature-number">02</div><div class="icon">✦</div>
+          <h3>Hover feedback</h3>
+          <p>Animated underlines, lift effects and a subtle glow make every menu item feel interactive.</p>
+        </article>
+        <article class="feature-card reveal delay-2">
+          <div class="feature-number">03</div><div class="icon">⌁</div>
+          <h3>Always accessible</h3>
+          <p>A fixed header keeps navigation visible across every page and remains comfortable on mobile screens.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="demo-strip section-shell reveal">
+      <div>
+        <p class="eyebrow">TRY IT NOW</p>
+        <h2>Scroll this page and watch the header transform.</h2>
+      </div>
+      <div class="scroll-chip"><span>SCROLL</span><b>↓</b></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="section-shell footer-inner">
+      <div><span class="brand-mark">N</span> NexaNav</div>
+      <p>SkillCraft Web Development Internship Project · 2026</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
